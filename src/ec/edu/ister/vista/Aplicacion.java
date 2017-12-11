@@ -1,24 +1,20 @@
 package ec.edu.ister.vista;
 
-import ec.edu.ister.modelo.Arreglos;
-import javax.swing.JOptionPane;
+import ec.edu.ister.modelo.EjerciciosPrueba2;
+
+
 
 /**
   * @Instituto Rumiñahui
- * @author SSolis
+ * @Juan Carrera
+ * @Estructura de Datos
+ * @Ing.Solis Santiago
  */
 public class Aplicacion {
     public static void main(String[] args) {
-        Arreglos obj = new Arreglos();
+        EjerciciosPrueba2 obj = new EjerciciosPrueba2();
         obj.menu();
-//        obj.dimensionar();
-//        obj.llenarArreglo();
-//        obj.imprimirFacil();
-//        obj.ordenar();
-//        obj.imprimirFacil();
-//        obj.maximo();
-//        obj.minimo();
-        //JOptionPane.showMessageDialog(null,obj.tamaño());
+
     }
 
 }

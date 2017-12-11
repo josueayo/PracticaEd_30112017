@@ -8,9 +8,11 @@ import javax.swing.JOptionPane;
 
 /**
  * @Instituto Rumiñahui
- * @author SSolis
+ * @Juan Carrera
+ * @Estructura de Datos
+ * @Ing.Solis Santiago
  */
-public class Arreglos {
+public class EjerciciosPrueba2 {
 
     private Integer arrayTemperaturas[];
 
@@ -22,14 +24,14 @@ public class Arreglos {
     public int tamaño() {
         return arrayTemperaturas.length;
     }
-
+//Llena un arreglo de 10 elementos con nùmeros pandèmicos
     public void llenarArreglo(){
         for (int i = 0; i < tamaño(); i++) {
             arrayTemperaturas[i]=(int)(Math.random()*10);
             
         }
     }
-    
+//Implime el arreglo arrayTemperatura almacenàndolos previamente en el String
     public void imprimir(){
        String acu="";
         for (int i = 0; i < arrayTemperaturas.length; i++) {
@@ -38,28 +40,23 @@ public class Arreglos {
          JOptionPane.showMessageDialog(null,acu);
     }
     
+//Imprime en un JOptionPane el arreglo arrayTemperaturas utilizando una clase del JDK de java  
     public void imprimirFacil(){
         
         JOptionPane.showMessageDialog(null,Arrays.toString(arrayTemperaturas));
         
     }
+//Ordena el arreglo en orden ascendente utilizando una clase del JDK de java
     public void ordenar(){
         Arrays.sort(arrayTemperaturas);
     }
+//Retorna el màximo de un arreglo convirtièndo previamente a un Arraylist
     public void maximo(){
         List<Integer> arr = new ArrayList();
         arr=Arrays.asList(arrayTemperaturas);
         Integer max= Collections.max(arr);
         JOptionPane.showMessageDialog(null,max);
         
-    }
-    
-    
-    public void minimo(){
-        List<Integer> arr = new ArrayList();
-        arr=Arrays.asList(arrayTemperaturas);
-        Integer min = Collections.min(arr);
-        JOptionPane.showMessageDialog(null, min);
     }
     
     public  void menu(){
@@ -75,8 +72,7 @@ public class Arreglos {
                + "3.- IMPRIMIR FACIL\n"
                + "4.- ORDENAR\n"
                + "5.- MAXIMO\n"
-               + "6.- MINIMO\n"
-               + "7.- SALIR....\n\n"));
+               + "6.- SALIR....\n\n"));
         
        switch(op){
            
@@ -94,12 +90,9 @@ public class Arreglos {
                break;
            case 5:
                maximo();
-               break;
-           case 6:
-               minimo();
-               break;   
+               break; 
        }       
-    }while (op!=7); 
+    }while (op!=6); 
 }
     
         
