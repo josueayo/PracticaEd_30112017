@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  * @Instituto Rumiñahui
- * @Juan Carrera
+ * @Ayo Esteban 
  * @Estructura de Datos
  * @Ing.Solis Santiago
  */
